@@ -1,0 +1,306 @@
+@font-face {
+    font-family: "CustomFont";
+    url("../fonts/Cagliostro-Regular.ttf") format("ttf"),
+}
+
+body {
+    margin: 0;
+    font-family: CustomFont, serif;
+    font-size: large;
+}
+
+/********* HEADER *********/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    background: url("../images/test.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+#navbar {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    top: 20px;
+    right: 80px;
+    font-family: CustomFont, serif;
+}
+
+/********* Itescia Logo *********/
+header img {
+    width: auto;
+    height: 130px;
+}
+
+#title {
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-shadow: 3px 2px 2px red;
+    font-size: 2.5em;
+}
+
+#acceuilButton {
+    padding: 3px 10px 3px 10px;
+    background: linear-gradient(180deg, #e6453a, #f18888);
+    font-size: x-large;
+    border-radius: 5px 5px 5px 5px;
+    transition-duration: 0.4s;
+}
+
+#acceuilButton:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+#ItesciaButton {
+    padding: 3px 10px 3px 10px;
+    background: linear-gradient(180deg, #e6453a, #f18888);
+    font-size: x-large;
+    border-radius: 5px 5px 5px 5px;
+    transition-duration: 0.4s;
+    position: relative;
+    left: 30px;
+}
+
+#ItesciaButton:hover {
+    background-color: gainsboro;
+}
+
+#acceuilText, #ItesciaText {
+    color: white;
+    text-decoration: unset;
+    cursor: unset;
+}
+
+#acceuilText:hover, #ItesciaText:hover{
+    color: black;
+}
+
+h1 {
+    color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: helvetica, serif;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+/********* CONTAINER *********/
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Submit button */
+form input[type=submit] {
+    width: 25%;
+    text-align: center;
+    margin-top: 50px;
+    height: 30px;
+    border-radius: 10px;
+    background: orangered;
+    font-size: 0.8em;
+    font-style: italic;
+    color: white;
+    box-shadow: 5px 4px 2px orangered;
+}
+
+li {
+    list-style-type: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+span {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.bac {
+    color: red;
+}
+
+article img {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/********* informatique article *********/
+#informatique h4 {
+    margin-bottom: 0;
+}
+
+#informatique ul {
+    margin-top: 2px;
+}
+
+.listMII {
+    margin-bottom: 0;
+}
+
+#container {
+    display: flex;
+    margin: 8px;
+}
+
+/********* firstChoice section *********/
+#firstChoice {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-right: 30px;
+}
+
+.gestionBan {
+    background: #f69d25;
+}
+
+.manageBan {
+    background: #c6d300;
+}
+
+.infoBan {
+    background: #16c0f3;
+}
+
+.gestionBan, .infoBan, .manageBan {
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.9em;
+}
+
+/********* information section *********/
+#information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: red solid 2px;
+    align-items: center;
+    width: 48%;
+}
+
+#information article {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 40%;
+    font-weight: 600;
+    font-size: medium;
+    
+}
+#scolarite {
+    font-weight: 600;
+    font-size: medium;
+}
+#souhaits{
+    font-weight: 600;
+    font-size: medium;
+} 
+#parrain{
+    font-weight: 600;
+    font-size: medium;
+}
+
+/********* Formation continue article *********/
+#formationC {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 50%;
+    background-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+    font-size: 0.8em;
+}
+
+#formationC aside:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#formationC ul {
+    padding-left: 0;
+}
+
+#formationC ul li{
+    display: flex;
+}
+
+.titleTry {
+    width: 70%;
+}
+
+/********* Formation continue last aside *********/
+article aside:last-child {
+    width: 100%;
+}
+
+/********* All input borders *********/
+input, input:focus {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/********* FOOTER *********/
+
+footer {
+    margin-top: 54px;
+    background: gainsboro;
+    font-size: 0.7em;
+    padding: 10px;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+}
+
+.reseaux img {
+    padding-right: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/****** MEDIA QUERIES ******/
+
+@media screen and (max-width: 768px){
+
+    form{
+        align-items: center;
+    }
+        form section{
+            width: 100%;
+        }
+        #information{
+            border: none;
+            width: 100%;
+        }
+        #firstChoice{
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 50px;
+            border-bottom: 5px solid red;
+            width: 100%;
+            margin-right: 0;
+        }
+}
